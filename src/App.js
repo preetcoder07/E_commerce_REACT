@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-import React from 'react';
-=======
 
->>>>>>> 800ef48877d6fa9b73c821bd485cc0df8edcf288
+import React from 'react';
+
 import './App.css';
 import Navbar from './components/Navbar';
 import Products from './components/Products';
