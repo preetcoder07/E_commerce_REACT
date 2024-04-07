@@ -46,6 +46,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/home"><Products toggle={toggle} darkmode={darkmode} category={false} /></Route>
+          <Route exact path="/E_commerce_REACT"><Products toggle={toggle} darkmode={darkmode} category={false} /></Route>
           <Route exact path="/"><Products toggle={toggle} darkmode={darkmode} category={false} /></Route>
           <Route exact path="/electronics"><Products key="electronics" toggle={toggle} darkmode={darkmode} category='electronics' /></Route>
           <Route exact path="/men's clothing"><Products key="men's clothing" toggle={toggle} darkmode={darkmode} category="men's clothing" /></Route>
