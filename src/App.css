@@ -1,38 +1,304 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav_items {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  gap: 65px;
+  list-style-type: none;
+  margin: 0px;
+  background-color: #0F1111;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.webname {
+  border: 2px solid white;
+  margin: 0px;
+  padding: 3px;
+}
+
+li a {
+  text-decoration: none;
+  color: rgb(220, 255, 255);
+}
+
+.btn {
+  height: 30px;
+  border: 3px solid rgb(235, 235, 27);
+  margin: 0px;
+  background-color: rgb(255, 255, 255);
+  height: 36px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: rgb(213, 216, 6);
+}
+
+.btn,
+.input_field,
+.dropbtn {
+  vertical-align: middle;
+  /* This helps align inline-block elements */
+}
+
+.input_field {
+  width: 100%;
+  margin-top: 10px;
+  color: #000000;
+  height: 30px;
+  border-top: 3px solid rgb(235, 235, 27);
+  border-bottom: 3px solid rgb(235, 235, 27);
+  font-weight: 700;
+}
+
+
+/* Style the dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the dropdown button */
+.dropbtn {
+  color: rgb(247, 247, 255);
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 700;
+  height: 40px;
+}
+
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  font-size: 15px;
+  font-family: serif;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 130px;
+  right: 0;
+  min-height: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: solid;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.searchicon {
+  height: 30px;
+  width: auto;
+}
+
+
+
+.card {
+  box-shadow: 15px 15px 15px rgba(1, 1, 1, 0.611);
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  border: 3px solid black;
+  background-color: #f1f1f1;
+  margin: auto;
+  margin-bottom: 10px;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.card:hover {
+  box-shadow: 15px 15px 15px rgb(0, 0, 0);
+  transition: 0.6s;
+  border-radius: 65px;
+}
+
+.prdctbtn {
+  border: none;
+  margin-top: 20px;
+  outline: 0;
+  padding: 10px;
+  font-size: 17px;
   color: white;
+  background-color: rgb(32, 30, 30);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.prdctbtn:hover {
+  zoom: 1.04;
+  transition: 0.8s;
+  border-radius: 15px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  /*400px means three images in single column*/
+  gap: 20px;
+  justify-content: center;
+}
+
+.card_img {
+
+  width: 100%;
+  /* Make the image cover the full width of the card */
+  height: 200px;
+  /* Keep the aspect ratio of the image */
+  object-fit: contain;
+  /* Cover the area of the card, might crop the image */
+  border-radius: 4px;
+  /* Optional: round the corners of the image */
+  margin-bottom: 16px;
+  /* Optional: add some space between the image and the title */
+}
+
+p1 {
+  font-weight: 700;
+  font-size: 24px;
+  font-family: serif;
+}
+
+p2 {
+  font-family: serif;
+  font-size: 20px;
+}
+
+p3 {
+  font-family: serif;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.badge {
+  position: relative;
+  top: 0;
+  /* Align top edge of badge with card edge */
+  right: 0;
+  /* Align right edge of badge with card edge */
+  left: 140px;
+  background-color: rgb(17, 16, 16);
+  color: white;
+  width: 30px;
+  /* Width of the badge */
+  height: 30px;
+  /* Height of the badge, equal to width for a circle */
+  border-radius: 50%;
+  /* Creates a circular shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+p4 {
+  margin-top: 12px;
+}
+
+.darkbtn {
+  height: 30px;
+  background-color: #212529;
+  border-radius: 15px;
+  border: 1px solid black;
+  color: white;
+  font-family: cursive;
+}
+
+.darkbtn:hover {
+  background-color: #4d5154;
+}
+
+.carts-container {
+  margin-top: 0px;
+  border: 4px solid black;
+  padding: 10px;
+  font-family: serif;
+  font-size: 80px;
+
+}
+
+.cart-box {
+  border: 1px solid black;
+  width: 390px;
+  text-align: center;
+
+}
+
+.cart-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  margin: 20px;
+  margin-right: 155vh;
+}
+
+.input_field,
+.dropdown,
+.btn {
+  width: auto;
+  /* Start with auto width to adjust below */
+  flex-grow: 1;
+  /* Allow flexible growth to fill space */
+}
+
+@media (max-width: 768px) {
+  .nav_items {
+    gap: 20px;
+    /* Reduce gap for smaller screens */
+    padding: 5px;
+    /* Adjust padding */
+    font-size: 16px;
+    /* Adjust font size */
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.cards,
+.cart-cards {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* Adjust grid for smaller devices */
+}
+
+@media (max-width: 480px) {
+  .nav_items {
+    flex-direction: column;
+    /* Stack items vertically */
+  }
+
+  .search_bar {
+
+    order: 3;
+    /* Move search bar down */
+    width: 100%;
+    /* Full width */
+  }
+
+  .darkbtn,
+  .btn {
+    width: 100%;
+    /* Full width for buttons */
+    margin-top: 10px;
+    /* Add space above buttons */
   }
 }
